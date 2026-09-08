@@ -1,0 +1,312 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@custom-variant dark (&:is(.dark *));
+
+/* ------------------------------------------------------------------ */
+/* Theme tokens (semantic). Components must use these, never raw hex.  */
+/* ------------------------------------------------------------------ */
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-surface: var(--surface);
+  --color-elevated: var(--elevated);
+
+  --color-brand: var(--brand);
+  --color-brand-strong: var(--brand-strong);
+  --color-brand-deep: var(--brand-deep);
+
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-heading: var(--font-manrope), var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.35);
+  --radius-2xl: calc(var(--radius) * 1.7);
+  --radius-3xl: calc(var(--radius) * 2.2);
+  --radius-4xl: calc(var(--radius) * 2.6);
+
+  --shadow-soft: 0 1px 2px rgb(20 32 24 / 0.04), 0 8px 24px -12px rgb(20 32 24 / 0.12);
+  --shadow-lift: 0 2px 4px rgb(20 32 24 / 0.05), 0 16px 40px -16px rgb(20 32 24 / 0.18);
+
+  --animate-marquee-left: marquee-left var(--marquee-duration, 42s) linear infinite;
+  --animate-marquee-right: marquee-right var(--marquee-duration, 48s) linear infinite;
+  --animate-flow-dash: flow-dash 3s linear infinite;
+  --animate-pulse-soft: pulse-soft 3.2s ease-in-out infinite;
+  --animate-float: float 7s ease-in-out infinite;
+
+  @keyframes marquee-left {
+    from {
+      transform: translate3d(0, 0, 0);
+    }
+    to {
+      transform: translate3d(-50%, 0, 0);
+    }
+  }
+  @keyframes marquee-right {
+    from {
+      transform: translate3d(-50%, 0, 0);
+    }
+    to {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  @keyframes flow-dash {
+    to {
+      stroke-dashoffset: -24;
+    }
+  }
+  @keyframes pulse-soft {
+    0%,
+    100% {
+      opacity: 0.55;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1.06);
+    }
+  }
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-6px);
+    }
+  }
+}
+
+:root {
+  /* PRD light palette */
+  --background: #ffffff;
+  --surface: #f7faf7;
+  --elevated: #ffffff;
+  --foreground: #142018;
+  --muted-foreground: #647069;
+  --border: #dfe8e1;
+
+  --brand: #5edb8c; /* Primary Green (decorative, glows, gradients) */
+  --brand-strong: #24b967; /* Strong Green (buttons, highlights) */
+  --brand-deep: #126b43; /* Dark Green (accent text, meets AA on white) */
+
+  --card: #ffffff;
+  --card-foreground: var(--foreground);
+  --popover: #ffffff;
+  --popover-foreground: var(--foreground);
+  --primary: var(--brand-strong);
+  --primary-foreground: #0b1a10;
+  --secondary: var(--surface);
+  --secondary-foreground: var(--foreground);
+  --muted: var(--surface);
+  --accent: #e9f7ee;
+  --accent-foreground: var(--brand-deep);
+  --destructive: #c8372d;
+  --input: var(--border);
+  --ring: var(--brand-strong);
+  --radius: 0.875rem; /* 14px base; xl ~19px */
+}
+
+.dark {
+  /* PRD dark palette */
+  --background: #09110d;
+  --surface: #101b15;
+  --elevated: #16231b;
+  --foreground: #f3f8f4;
+  --muted-foreground: #a5b4aa;
+  --border: #26372c;
+
+  --brand: #69e59a;
+  --brand-strong: #69e59a;
+  --brand-deep: #69e59a;
+
+  --card: var(--surface);
+  --card-foreground: var(--foreground);
+  --popover: var(--elevated);
+  --popover-foreground: var(--foreground);
+  --primary: var(--brand);
+  --primary-foreground: #06140c;
+  --secondary: var(--elevated);
+  --secondary-foreground: var(--foreground);
+  --muted: var(--elevated);
+  --accent: #14301f;
+  --accent-foreground: var(--brand);
+  --destructive: #ff7b6e;
+  --input: var(--border);
+  --ring: var(--brand);
+}
+
+/* ------------------------------------------------------------------ */
+/* Base                                                                 */
+/* ------------------------------------------------------------------ */
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  html {
+    @apply font-sans antialiased;
+    color-scheme: light;
+    scroll-behavior: smooth;
+  }
+  html.dark {
+    color-scheme: dark;
+  }
+  h1 {
+    font-size: clamp(2.625rem, 4vw + 1.5rem, 4.75rem);
+    line-height: 1.05;
+  }
+  h2 {
+    font-size: clamp(2.75rem, 1.2vw + 2.2rem, 3.25rem);
+    line-height: 1.08;
+  }
+  body {
+    @apply bg-background text-foreground;
+    text-rendering: optimizeLegibility;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-heading tracking-tight;
+    text-wrap: balance;
+  }
+  p {
+    text-wrap: pretty;
+  }
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+  :focus-visible {
+    @apply outline-none ring-2 ring-ring ring-offset-2 ring-offset-background;
+  }
+  ::selection {
+    background: color-mix(in oklch, var(--brand) 40%, transparent);
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/* Utilities                                                            */
+/* ------------------------------------------------------------------ */
+
+@utility container-x {
+  @apply mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-10;
+}
+
+@utility eyebrow {
+  @apply inline-flex items-center gap-2 text-[11px] font-semibold tracking-[0.18em] uppercase text-brand-deep;
+}
+
+@utility grid-bg {
+  background-image:
+    linear-gradient(to right, color-mix(in oklch, var(--border) 70%, transparent) 1px, transparent 1px),
+    linear-gradient(to bottom, color-mix(in oklch, var(--border) 70%, transparent) 1px, transparent 1px);
+  background-size: 48px 48px;
+  mask-image: radial-gradient(ellipse at center, black 40%, transparent 80%);
+}
+
+@utility glow {
+  box-shadow: 0 0 0 1px color-mix(in oklch, var(--brand) 35%, transparent),
+    0 0 40px -8px color-mix(in oklch, var(--brand) 45%, transparent);
+}
+
+@utility glow-text {
+  text-shadow: 0 0 24px color-mix(in oklch, var(--brand) 55%, transparent);
+}
+
+@utility shadow-soft {
+  box-shadow: var(--shadow-soft);
+}
+
+@utility shadow-lift {
+  box-shadow: var(--shadow-lift);
+}
+
+@utility marquee-mask {
+  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+
+@utility text-balance {
+  text-wrap: balance;
+}
+
+@utility no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* Section reveal (driven by IntersectionObserver via data-reveal). */
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(14px);
+  transition:
+    opacity 0.55s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+  transition-delay: var(--reveal-delay, 0ms);
+}
+[data-reveal="visible"] {
+  opacity: 1;
+  transform: none;
+}
+
+/* Theme transition */
+html.theme-transition,
+html.theme-transition * {
+  transition:
+    background-color 0.25s ease,
+    border-color 0.25s ease,
+    color 0.15s ease !important;
+}
+
+/* ------------------------------------------------------------------ */
+/* Reduced motion                                                       */
+/* ------------------------------------------------------------------ */
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  [data-reveal] {
+    opacity: 1;
+    transform: none;
+  }
+  .animate-marquee-left,
+  .animate-marquee-right {
+    animation: none !important;
+  }
+}

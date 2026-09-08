@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 72" role="img">
+  <path fill="#1C1C24" d="M8 8h28v12H20c-2.2 0-4 1.8-4 4v32c0 2.2 1.8 4 4 4h28v12H16C7.2 72 0 64.8 0 56V16C0 7.2 7.2 0 16 0h20v8H8z"/>
+  <rect x="28" y="16" width="18" height="18" rx="2" fill="#9C36F5"/>
+  <text x="58" y="38" fill="#1C1C24" font-family="Inter, Arial, Helvetica, sans-serif" font-size="28" font-weight="700">CrowdGen</text>
+  <text x="196" y="62" fill="#1C1C24" font-family="Inter, Arial, Helvetica, sans-serif" font-size="14" font-weight="500">By Appen</text>
+</svg>
