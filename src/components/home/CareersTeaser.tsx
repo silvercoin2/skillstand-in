@@ -7,10 +7,12 @@ import { Container, Section } from "@/components/ui/container";
 import { Reveal } from "@/components/ui/reveal";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { TrackedLink } from "@/components/ui/tracked-link";
-import { careerRoles, careersTeaser } from "@/data/careers";
+import { getCareerRolesByCategory, getCareersTeaser } from "@/data/careers";
 import { ctaLinks } from "@/data/navigation";
 
 export function CareersTeaser() {
+  const careersTeaser = getCareersTeaser();
+  const roleGroups = getCareerRolesByCategory();
   return (
     <Section aria-labelledby="careers-teaser-heading" className="border-y border-border/70 bg-surface">
       <Container>
@@ -29,25 +31,30 @@ export function CareersTeaser() {
         </Reveal>
 
         <div className="mt-12 grid gap-4 md:grid-cols-2 lg:gap-5">
-          {careerRoles.map((role, i) => (
-            <Reveal key={role.slug} delay={i * 80}>
-              <Link
-                href={`${ctaLinks.careers}#${role.slug}`}
-                className="group flex h-full flex-col gap-5 rounded-2xl border border-border bg-card p-7 shadow-soft transition-[transform,box-shadow,border-color] duration-300 hover:-translate-y-1 hover:border-brand/50 hover:shadow-lift"
-              >
-                <div className="flex items-start justify-between gap-3">
-                  <h3 className="text-xl font-bold tracking-tight">{role.title}</h3>
-                  <ArrowUpRightIcon
-                    aria-hidden="true"
-                    className="size-4 shrink-0 text-muted-foreground transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-brand-deep"
-                  />
+          {roleGroups.map((group, i) => (
+            <Reveal key={group.id} delay={i * 80}>
+              <div className="flex h-full flex-col gap-5 rounded-2xl border border-border bg-card p-7 shadow-soft">
+                <div className="flex flex-col gap-2">
+                  <h3 className="text-xl font-bold tracking-tight">{group.label}</h3>
+                  <p className="text-sm leading-relaxed text-muted-foreground">{group.description}</p>
                 </div>
-                <p className="text-[0.95rem] leading-relaxed text-muted-foreground">{role.shortDescription}</p>
-                <span className="mt-auto inline-flex items-center gap-1.5 text-sm font-semibold text-brand-deep">
-                  Learn More
-                  <ArrowUpRightIcon aria-hidden="true" className="size-4" />
-                </span>
-              </Link>
+                <ul className="flex flex-col gap-1">
+                  {group.roles.map((role) => (
+                    <li key={role.slug}>
+                      <Link
+                        href={`${ctaLinks.careers}#${role.slug}`}
+                        className="group flex items-center justify-between gap-3 rounded-lg py-2 text-[0.95rem] font-medium text-foreground/90 transition-colors hover:text-brand-deep"
+                      >
+                        <span>{role.title}</span>
+                        <ArrowUpRightIcon
+                          aria-hidden="true"
+                          className="size-4 shrink-0 text-muted-foreground transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-brand-deep"
+                        />
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </Reveal>
           ))}
         </div>

@@ -6,7 +6,7 @@ import { CheckIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { ButtonArrow } from "@/components/ui/arrow-link";
 import { siteConfig } from "@/config/site";
-import type { CareerRole } from "@/data/careers";
+import type { CareerRole } from "@/data/career-types";
 import { currentPath, track } from "@/lib/analytics";
 import { cn } from "@/lib/utils";
 
@@ -137,23 +137,25 @@ function RoleCard({
               ) : null}
             </section>
 
-            <section className="flex flex-col gap-4">
-              <h4 className="text-lg font-bold tracking-tight">{role.helpfulHeading}</h4>
-              <p className="text-sm text-muted-foreground">{role.helpfulIntro}</p>
-              <ul className="flex flex-wrap gap-2">
-                {role.chips.map((chip) => (
-                  <li
-                    key={chip}
-                    className="rounded-lg border border-border bg-surface px-3 py-1.5 font-mono text-xs font-medium text-foreground/85"
-                  >
-                    {chip}
-                  </li>
-                ))}
-              </ul>
-              {role.helpfulNote ? (
-                <p className="text-sm text-muted-foreground">{role.helpfulNote}</p>
-              ) : null}
-            </section>
+            {role.chips?.length ? (
+              <section className="flex flex-col gap-4">
+                <h4 className="text-lg font-bold tracking-tight">{role.helpfulHeading}</h4>
+                <p className="text-sm text-muted-foreground">{role.helpfulIntro}</p>
+                <ul className="flex flex-wrap gap-2">
+                  {role.chips.map((chip) => (
+                    <li
+                      key={chip}
+                      className="rounded-lg border border-border bg-surface px-3 py-1.5 font-mono text-xs font-medium text-foreground/85"
+                    >
+                      {chip}
+                    </li>
+                  ))}
+                </ul>
+                {role.helpfulNote ? (
+                  <p className="text-sm text-muted-foreground">{role.helpfulNote}</p>
+                ) : null}
+              </section>
+            ) : null}
 
             <div>
               <Button asChild size="xl">

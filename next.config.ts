@@ -45,6 +45,10 @@ const securityHeaders = [
 
 const nextConfig: NextConfig = {
   poweredByHeader: false,
+  outputFileTracingIncludes: {
+    "/": ["./content/careers/**/*"],
+    "/careers": ["./content/careers/**/*"],
+  },
   experimental: {
     // Résumé uploads are capped at 4 MB; leave headroom for multipart overhead.
     serverActions: {
