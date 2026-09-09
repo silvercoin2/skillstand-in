@@ -25,6 +25,10 @@ export function getCareerRole(slug: string) {
   return getCareerRoles().find((role) => role.slug === slug);
 }
 
+export function getCareerRolePath(slug: string) {
+  return `/careers/${slug}`;
+}
+
 export function getCareerRolesByCategory() {
   const { categories, roles } = loadCareers();
   return categories

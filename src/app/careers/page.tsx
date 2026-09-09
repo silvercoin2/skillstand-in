@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-import { RoleAccordion } from "@/components/careers/RoleAccordion";
+import { RoleList } from "@/components/careers/RoleList";
 import { ArrowLink } from "@/components/ui/arrow-link";
 import { Container, Section } from "@/components/ui/container";
 import { PageHero } from "@/components/ui/page-hero";
@@ -48,7 +48,7 @@ export default function CareersPage() {
                     </h3>
                     <p className="text-sm leading-relaxed text-muted-foreground sm:text-base">{group.description}</p>
                   </div>
-                  <RoleAccordion roles={group.roles} />
+                  <RoleList roles={group.roles} />
                 </section>
               </Reveal>
             ))}

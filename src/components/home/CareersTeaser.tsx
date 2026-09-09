@@ -7,7 +7,7 @@ import { Container, Section } from "@/components/ui/container";
 import { Reveal } from "@/components/ui/reveal";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { TrackedLink } from "@/components/ui/tracked-link";
-import { getCareerRolesByCategory, getCareersTeaser } from "@/data/careers";
+import { getCareerRolePath, getCareerRolesByCategory, getCareersTeaser } from "@/data/careers";
 import { ctaLinks } from "@/data/navigation";
 
 export function CareersTeaser() {
@@ -42,7 +42,7 @@ export function CareersTeaser() {
                   {group.roles.map((role) => (
                     <li key={role.slug}>
                       <Link
-                        href={`${ctaLinks.careers}#${role.slug}`}
+                        href={getCareerRolePath(role.slug)}
                         className="group flex items-center justify-between gap-3 rounded-lg py-2 text-[0.95rem] font-medium text-foreground/90 transition-colors hover:text-brand-deep"
                       >
                         <span>{role.title}</span>

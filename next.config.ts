@@ -48,6 +48,7 @@ const nextConfig: NextConfig = {
   outputFileTracingIncludes: {
     "/": ["./content/careers/**/*"],
     "/careers": ["./content/careers/**/*"],
+    "/careers/[slug]": ["./content/careers/**/*"],
   },
   experimental: {
     // Résumé uploads are capped at 4 MB; leave headroom for multipart overhead.
