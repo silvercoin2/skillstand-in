@@ -13,6 +13,7 @@ export interface CareerRole {
   type: string;
   location: string;
   employment: string;
+  compensation?: string;
   shortDescription: string;
   about: string[];
   youWillDo: string[];
