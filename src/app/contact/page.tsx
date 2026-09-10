@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 
-import { CompanyInquiryForm } from "@/components/forms/CompanyInquiryForm";
-import { ContactModeToggle, parseContactMode } from "@/components/forms/ContactModeToggle";
-import { EngineerApplicationForm } from "@/components/forms/EngineerApplicationForm";
+import { CONTACT_FORMS_ENABLED, ContactSubmission } from "@/components/forms/ContactSubmission";
+import { parseContactMode } from "@/components/forms/ContactModeToggle";
 import { Container, Section } from "@/components/ui/container";
 import { PageHero } from "@/components/ui/page-hero";
 import { siteConfig } from "@/config/site";
@@ -17,6 +16,15 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { mode } = await searchParams;
   const isEngineer = parseContactMode(mode) === "engineer";
+
+  if (!CONTACT_FORMS_ENABLED) {
+    return buildMetadata({
+      title: "Contact",
+      description: `Email ${siteConfig.name} at ${siteConfig.contactEmail} about AI training, evaluation, or engineering work.`,
+      path: "/contact",
+    });
+  }
+
   return buildMetadata({
     title: isEngineer ? "Join Our Engineering Network" : "Work With Us",
     description: isEngineer
@@ -35,34 +43,26 @@ export default async function ContactPage({ searchParams }: { searchParams: Cont
     <>
       <PageHero
         eyebrow="Contact"
-        title={isEngineer ? "Join Our Engineering Network" : "Work With Us"}
+        title={
+          CONTACT_FORMS_ENABLED
+            ? isEngineer
+              ? "Join Our Engineering Network"
+              : "Work With Us"
+            : "Contact Skill Stand In"
+        }
         description={
-          isEngineer
-            ? "Tell us about your background. We review every application ourselves and reach out when a project matches your skills."
-            : "Share the scope, timeline, and quality bar. We'll come back with how we would staff and review the work."
+          CONTACT_FORMS_ENABLED
+            ? isEngineer
+              ? "Tell us about your background. We review every application ourselves and reach out when a project matches your skills."
+              : "Share the scope, timeline, and quality bar. We'll come back with how we would staff and review the work."
+            : "Write to us about a project or to join the engineering network. We read every message."
         }
       />
 
       <Section aria-labelledby="contact-form-heading">
         <Container>
           <div className="mx-auto flex max-w-3xl flex-col gap-8">
-            <ContactModeToggle mode={current} />
-            <div className="rounded-3xl border border-border bg-card p-6 shadow-soft sm:p-8 lg:p-10">
-              <h2 id="contact-form-heading" className="sr-only">
-                {isEngineer ? "Engineer application form" : "Company inquiry form"}
-              </h2>
-              {isEngineer ? <EngineerApplicationForm /> : <CompanyInquiryForm />}
-            </div>
-            <p className="text-center text-xs leading-relaxed text-muted-foreground">
-              Prefer email? Write to{" "}
-              <a
-                href={`mailto:${siteConfig.contactEmail}`}
-                className="font-medium text-brand-deep underline underline-offset-4"
-              >
-                {siteConfig.contactEmail}
-              </a>
-              .
-            </p>
+            <ContactSubmission mode={current} />
           </div>
         </Container>
       </Section>
