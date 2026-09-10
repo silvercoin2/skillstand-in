@@ -75,6 +75,29 @@ export function RoleDetail({ role, related }: { role: CareerRole; related: Caree
               ) : null}
             </section>
 
+            {role.extraSections?.map((section) => (
+              <section key={section.heading} className="flex flex-col gap-4">
+                <h2 className="text-2xl font-bold tracking-tight">{section.heading}</h2>
+                {section.paragraphs.map((paragraph) => (
+                  <p key={paragraph} className="leading-relaxed text-muted-foreground">
+                    {paragraph}
+                  </p>
+                ))}
+                {section.items.length > 0 ? (
+                  <ul className="grid gap-2.5">
+                    {section.items.map((item) => (
+                      <li key={item} className="flex items-start gap-3 text-[0.95rem] leading-relaxed">
+                        <span className="mt-0.5 flex size-6 shrink-0 items-center justify-center rounded-md bg-accent text-accent-foreground">
+                          <CheckIcon className="size-3.5" strokeWidth={2.5} aria-hidden="true" />
+                        </span>
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                ) : null}
+              </section>
+            ))}
+
             {role.chips?.length ? (
               <section className="flex flex-col gap-4">
                 <h2 className="text-2xl font-bold tracking-tight">{role.helpfulHeading}</h2>

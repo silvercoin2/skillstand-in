@@ -22,8 +22,15 @@ export interface CareerRole {
   helpfulIntro?: string;
   helpfulNote?: string;
   chips?: string[];
+  extraSections?: CareerExtraSection[];
   applyLabel: string;
   applyUrl: string;
+}
+
+export interface CareerExtraSection {
+  heading: string;
+  paragraphs: string[];
+  items: string[];
 }
 
 export interface CareersPageCopy {

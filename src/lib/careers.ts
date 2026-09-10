@@ -7,6 +7,7 @@ import { z } from "zod";
 
 import type {
   CareerCategory,
+  CareerExtraSection,
   CareerRole,
   CareersPageCopy,
   CareersTeaserCopy,
@@ -81,12 +82,16 @@ interface CareersData {
 
 const SECTION_ALIASES: Record<string, "about" | "youWillDo" | "lookingFor"> = {
   "about the role": "about",
+  "about skillstand in": "about",
+  "about skill stand in": "about",
   "what you'll do": "youWillDo",
   "what you’ll do": "youWillDo",
   "what we're looking for": "lookingFor",
   "what we’re looking for": "lookingFor",
   requirements: "lookingFor",
 };
+
+const SKIP_HEADINGS = new Set(["join skillstand in", "join skill stand in"]);
 
 function normalizeHeading(value: string): string {
   return value.replace(/['’]/g, "'").trim().toLowerCase();
@@ -96,8 +101,8 @@ function parseListItems(block: string): string[] {
   return block
     .split(/\r?\n/)
     .map((line) => line.trim())
-    .filter((line) => /^[-*]\s+/.test(line))
-    .map((line) => line.replace(/^[-*]\s+/, "").trim())
+    .filter((line) => /^[-*]\s+/.test(line) || /^\d+\.\s+/.test(line))
+    .map((line) => line.replace(/^[-*]\s+/, "").replace(/^\d+\.\s+/, "").trim())
     .filter(Boolean);
 }
 
@@ -108,31 +113,45 @@ function parseParagraphs(block: string): string[] {
       part
         .split(/\r?\n/)
         .map((line) => line.trim())
-        .filter((line) => line.length > 0 && !/^[-*]\s+/.test(line))
+        .filter((line) => line.length > 0 && !/^[-*]\s+/.test(line) && !/^\d+\.\s+/.test(line))
         .join(" "),
     )
     .map((part) => part.trim())
     .filter(Boolean);
 }
 
-function parseBody(markdown: string): Pick<CareerRole, "about" | "youWillDo" | "lookingFor"> {
+function parseBody(markdown: string): {
+  about: string[];
+  youWillDo: string[];
+  lookingFor: string[];
+  extraSections: CareerExtraSection[];
+} {
   const about: string[] = [];
   const youWillDo: string[] = [];
   const lookingFor: string[] = [];
+  const extraSections: CareerExtraSection[] = [];
   const chunks = markdown.split(/^##\s+/m).slice(1);
 
   for (const chunk of chunks) {
     const newline = chunk.indexOf("\n");
     const heading = (newline === -1 ? chunk : chunk.slice(0, newline)).trim();
     const body = newline === -1 ? "" : chunk.slice(newline + 1).trim();
-    const key = SECTION_ALIASES[normalizeHeading(heading)];
-    if (!key) continue;
+    const normalized = normalizeHeading(heading);
+    if (SKIP_HEADINGS.has(normalized)) continue;
+
+    const key = SECTION_ALIASES[normalized];
     if (key === "about") about.push(...parseParagraphs(body));
-    if (key === "youWillDo") youWillDo.push(...parseListItems(body));
-    if (key === "lookingFor") lookingFor.push(...parseListItems(body));
+    else if (key === "youWillDo") youWillDo.push(...parseListItems(body));
+    else if (key === "lookingFor") lookingFor.push(...parseListItems(body));
+    else {
+      const paragraphs = parseParagraphs(body);
+      const items = parseListItems(body);
+      if (paragraphs.length === 0 && items.length === 0) continue;
+      extraSections.push({ heading, paragraphs, items });
+    }
   }
 
-  return { about, youWillDo, lookingFor };
+  return { about, youWillDo, lookingFor, extraSections };
 }
 
 function loadConfig() {
@@ -162,7 +181,7 @@ function loadRole(
     }
   }
 
-  const { about, youWillDo, lookingFor } = parseBody(parsed.content);
+  const { about, youWillDo, lookingFor, extraSections } = parseBody(parsed.content);
   if (about.length === 0 || youWillDo.length === 0 || lookingFor.length === 0) {
     throw new Error(
       `Career role "${slug}" is missing a required Markdown section (About the Role, What You'll Do, What We're Looking For).`,
@@ -193,6 +212,7 @@ function loadRole(
       helpfulIntro: data.helpfulIntro,
       helpfulNote: data.helpfulNote,
       chips: data.chips,
+      extraSections,
       applyLabel: data.applyLabel ?? `Apply as ${data.title}`,
       applyUrl: data.applyUrl ?? defaultApplyUrl,
     },
