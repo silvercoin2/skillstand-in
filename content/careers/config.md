@@ -5,28 +5,31 @@ defaultApplyUrl: https://docs.google.com/forms/d/e/1FAIpQLSeDkxCBCXHvs9E44n8atCp
 page:
   eyebrow: Join Skill Stand In
   title: An AI Expert Marketplace for Training, Evaluation, and Engineering
-  description: Skill Stand In connects experienced professionals with AI training, evaluation, and engineering projects. We match domain experts and engineers to work that needs real judgment — not generic task lists.
+  description: Skill Stand In connects experienced professionals with AI training and evaluation projects. We match domain experts and engineers to work that needs real judgment — not generic task lists.
   viewRoles: View Open Roles
   openRolesEyebrow: Open Roles
   openRolesTitle: Expert Roles Across AI Work
-  openRolesDescription: Browse roles by discipline. Engagements are remote and project-based, with flexible availability as projects come online.
+  openRolesDescription: Browse roles by discipline. Engagements are remote, hourly, and part-time, with flexible availability as projects come online.
 
 teaser:
   eyebrow: Join Skill Stand In
   title: Work With Us
-  description: Skill Stand In is an AI expert marketplace. Experienced engineers, evaluators, clinicians, and security professionals work with us on AI training and evaluation projects.
+  description: Skill Stand In is an AI expert marketplace. Experienced engineers, evaluators, clinicians, policy experts, and security professionals work with us to review and score AI-generated work.
   cta: Explore Careers
 
 categories:
   - id: engineering
     label: Engineering
-    description: Build AI applications, infrastructure, and product interfaces for training, evaluation, and intelligent workflows.
+    description: Evaluate AI-generated software, infrastructure, interfaces, and AEC work against professional engineering standards.
   - id: ai-training
     label: AI Training & Evaluation
-    description: Create expert feedback, training data, and product reviews that make AI systems more accurate and useful.
+    description: Review AI-generated content, score outputs, and provide expert feedback that makes AI systems more accurate and useful.
   - id: healthcare
     label: Healthcare & Science
     description: Apply clinical and public-health expertise so healthcare AI stays evidence-based and clinically meaningful.
+  - id: policy
+    label: Policy & Economics
+    description: Evaluate AI-generated analysis of regulation, welfare, and public programs against professional economic standards.
   - id: security
     label: Security
     description: Use adversarial thinking and threat analysis to improve how AI systems understand real-world security.

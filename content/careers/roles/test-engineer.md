@@ -4,9 +4,9 @@ category: engineering
 headerCategory: Engineering
 type: QA / Test Engineering
 location: Remote
-employment: Contract / Part-Time
+employment: Hourly / Part-time
 order: 50
-shortDescription: Design and run automated tests for modern web and AI-powered applications, then isolate failures and explain why they happen.
+shortDescription: Evaluate AI-generated tests and web application behavior, then explain failures, discrepancies, and scoring decisions.
 applyLabel: Apply as Test Engineer
 helpfulHeading: Nice to Have
 helpfulIntro: "Experience in one or more of the following areas is a plus:"
@@ -24,36 +24,30 @@ chips:
 
 ## About Skill Stand In
 
-Skill Stand In connects skilled technology professionals with opportunities involving modern software, AI, and web application development.
+Skill Stand In connects skilled technology professionals with opportunities to evaluate modern software, AI, and web application work.
 
-We work with engineers who can combine strong technical fundamentals with modern AI-assisted workflows. Our focus is not simply on finding bugs—we look for people who understand how applications should behave, can systematically validate complex workflows, and can clearly explain why something fails.
+We work with engineers who can combine strong technical fundamentals with modern AI-assisted review. Our focus is expert judgment—we look for people who understand how applications should behave, can systematically validate complex workflows, and can clearly explain why something fails.
 
 ## About the Role
 
 We are looking for an experienced Test Engineer to evaluate and validate modern web and AI-powered applications.
 
-You will design and execute automated tests, review browser-based workflows, investigate failures, and ensure application behavior is reliable and reproducible.
+You will review browser-based workflows, investigate failures, and judge whether tests and application behavior are reliable and reproducible. You will not design or build products or test suites as the core of this role.
 
 This role is well suited for a QA Engineer, SDET, Software Engineer in Test, or software engineer with significant automated testing experience.
 
-You should be comfortable working independently, debugging unfamiliar applications, and using AI tools to accelerate testing without relying on them blindly.
+You should be comfortable working independently, reviewing unfamiliar applications, and using AI tools to accelerate evaluation without relying on them blindly.
 
 ## What You'll Do
 
-- Design, implement, and maintain automated tests for modern web applications.
-- Build browser-based end-to-end tests using tools such as Playwright, Cypress, or Selenium.
-- Validate user journeys, forms, authentication flows, navigation, state changes, and other browser interactions.
-- Review existing test cases and determine whether they accurately validate application requirements.
-- Verify that assertions produce clear and deterministic pass/fail results.
-- Design reliable test fixtures, test data, setup, and teardown processes.
-- Identify flaky tests, race conditions, timing problems, hidden dependencies, and environment-specific failures.
-- Reproduce bugs and isolate failures across frontend, backend, API, browser, and data layers.
-- Test REST APIs and application integrations where appropriate.
-- Analyze logs, browser developer tools, network requests, API responses, and application state when debugging failures.
-- Document defects with clear reproduction steps, expected behavior, actual behavior, and supporting evidence.
-- Collaborate with software engineers to improve application quality and testability.
-- Review AI-generated application functionality and test scenarios for correctness, completeness, and technical feasibility.
-- Provide concise, structured technical feedback on application and test quality.
+- Review automated tests and browser workflows for modern web and AI-powered applications.
+- Evaluate user journeys, forms, authentication, navigation, and other browser interactions for correctness.
+- Check whether assertions, fixtures, and setup/teardown produce clear, reproducible results.
+- Identify flaky tests, race conditions, hidden dependencies, and environment-specific failures.
+- Isolate failures across frontend, backend, API, browser, and data layers using logs and developer tools.
+- Review AI-generated application behavior and test scenarios for completeness and technical feasibility.
+- Document defects with expected behavior, actual behavior, and a defensible score.
+- Work independently and asynchronously to deliver high-quality evaluations.
 
 ## What We're Looking For
 
@@ -76,12 +70,12 @@ AI is becoming an important part of modern software development and testing. We 
 
 You may use tools such as ChatGPT, Claude, GitHub Copilot, Cursor, or similar AI coding assistants to help:
 
-- Generate and refine test cases.
+- Review and refine AI-generated test cases.
 - Explore edge cases and failure scenarios.
-- Write or improve automation code.
+- Evaluate automation code.
 - Analyze logs and debugging information.
 - Understand unfamiliar codebases.
-- Accelerate repetitive testing tasks.
+- Accelerate repetitive review tasks.
 
 Candidates should also understand how to verify AI-generated code and conclusions through testing, code review, documentation, and independent technical reasoning.
 
@@ -89,7 +83,7 @@ Candidates should also understand how to verify AI-generated code and conclusion
 
 Strong candidates do more than confirm whether a test passes.
 
-You should be able to look at a requirement, understand the intended user behavior, determine what needs to be tested, identify edge cases, build a reliable validation strategy, and investigate unexpected results.
+You should be able to look at a requirement, understand the intended user behavior, determine what needs to be evaluated, identify edge cases, judge whether a validation strategy is reliable, and investigate unexpected results.
 
 We value engineers who are systematic, curious, detail-oriented, technically strong, and comfortable questioning assumptions.
 

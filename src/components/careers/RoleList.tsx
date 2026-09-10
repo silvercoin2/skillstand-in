@@ -18,7 +18,6 @@ export function RoleList({ roles }: { roles: CareerRole[] }) {
                 <span className="font-heading text-xl font-bold tracking-tight sm:text-2xl">{role.title}</span>
                 <span className="text-sm text-muted-foreground">
                   {role.headerCategory} · {role.location} · {role.employment}
-                  {role.compensation ? ` · ${role.compensation}` : ""}
                 </span>
               </span>
               <ArrowUpRightIcon

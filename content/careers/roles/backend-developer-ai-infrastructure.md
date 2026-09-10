@@ -4,9 +4,9 @@ category: engineering
 headerCategory: Engineering
 type: Engineering
 location: Remote
-employment: Project-based / Flexible
+employment: Hourly / Part-time
 order: 30
-shortDescription: Build scalable APIs, distributed systems, and data pipelines that support AI training, inference, and evaluation workloads.
+shortDescription: Review AI-generated APIs, services, and data pipelines that support training, inference, and evaluation workloads.
 applyLabel: Apply as Backend Developer
 helpfulHeading: Helpful Technical Backgrounds
 helpfulIntro: "Examples include:"
@@ -25,21 +25,25 @@ chips:
 
 ## About the Role
 
-Skill Stand In is seeking Backend Engineers to build scalable infrastructure powering AI applications. You will design APIs, distributed systems, data pipelines, and backend services that support modern AI workloads.
+Skill Stand In is seeking Backend Developers to evaluate server-side systems, APIs, and infrastructure work used around AI products — including data pipelines, model-serving patterns, and scalable services.
+
+This is a remote, flexible contract role. You will judge whether AI-generated backend work is correct, reliable, and fit for real traffic. You will not design or build infrastructure.
 
 ## What You'll Do
 
-- Design and develop scalable backend services, APIs, and microservices.
-- Build infrastructure supporting AI training, inference, and evaluation workflows.
-- Develop reliable data pipelines and processing systems.
-- Integrate databases, cloud services, message queues, and external APIs.
-- Optimize systems for performance, scalability, and reliability.
-- Debug production issues and contribute to architecture decisions.
+- Review AI-generated backend services, APIs, and data pipelines for correctness and completeness.
+- Evaluate whether architecture choices would support AI training, inference, or evaluation workloads at realistic scale.
+- Check integrations with databases, message queues, cloud services, and third-party APIs.
+- Identify performance, reliability, security, and scalability problems in proposed implementations.
+- Assess whether code is clean, testable, and documented to professional engineering standards.
+- Provide structured review feedback, flag flawed reasoning, and defend scores against practitioner practice.
+- Work independently on task-based assignments on your own schedule.
 
 ## What We're Looking For
 
-- Strong experience with backend programming languages including Python, Go, Java, or Node.js.
-- Experience designing REST APIs and distributed systems.
+- Strong professional experience with Python, Go, Java, Node.js, or a similar backend language.
+- Experience building or reviewing REST APIs and distributed systems.
 - Knowledge of relational and NoSQL databases.
 - Experience with Docker, Kubernetes, Git, and CI/CD workflows.
 - Familiarity with AI infrastructure, data engineering, or machine learning systems is preferred.
+- Ability to troubleshoot complex backend issues and explain architectural tradeoffs in writing.

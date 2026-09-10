@@ -4,8 +4,7 @@ category: engineering
 headerCategory: Engineering
 type: Browser Test Validation
 location: Remote
-employment: Hourly contract
-compensation: "$30–$60/hour"
+employment: Hourly / Part-time
 order: 60
 shortDescription: Review browser-based test workflows for AI-generated applications and decide whether automated tests are reliable, deterministic, and technically sound.
 applyLabel: Apply as QA Engineer
@@ -36,15 +35,12 @@ This role is focused on technical review and validation rather than simply execu
 
 - Review browser-based test workflows for AI-generated web applications.
 - Evaluate whether browser interactions are technically feasible, realistic, and reliable.
-- Review automated UI and end-to-end test scenarios for correctness.
 - Validate test setup, fixtures, test data, environment assumptions, and execution flow.
-- Ensure tests are properly isolated and do not depend on unintended state from previous executions.
-- Verify that assertions produce deterministic and unambiguous pass/fail outcomes.
+- Verify that assertions produce deterministic, unambiguous pass/fail outcomes.
 - Identify flaky tests, race conditions, timing issues, hidden dependencies, and unreliable selectors.
-- Detect missing setup steps, incomplete validation logic, and ambiguous test requirements.
-- Review AI-generated testing approaches and verify their technical accuracy rather than accepting AI output at face value.
-- Debug failing or inconsistent browser workflows to determine whether problems originate from the application, test implementation, or test specification.
-- Provide concise, structured technical feedback using established review guidelines and rubrics.
+- Review AI-generated testing approaches and scoresheets rather than accepting AI output at face value.
+- Provide concise, structured technical feedback and defend scoring against practitioner QA standards.
+- Work independently and asynchronously to deliver high-quality evaluations.
 
 ## What We're Looking For
 
@@ -65,7 +61,7 @@ AI tools may be part of the workflow, so we are particularly interested in engin
 
 Ideal candidates can:
 
-- Use AI coding assistants to accelerate development, testing, debugging, and code review.
+- Use AI coding assistants to accelerate review, testing, debugging, and evaluation.
 - Critically evaluate AI-generated code and test cases.
 - Detect incorrect assumptions, hallucinated APIs, weak assertions, and incomplete test coverage.
 - Independently verify AI-generated solutions through code inspection and execution.
@@ -110,7 +106,7 @@ This role offers:
 
 - Fully remote work.
 - Flexible scheduling.
-- Hourly contract opportunities.
+- Hourly, part-time work.
 - Exposure to AI-assisted software engineering workflows.
 - Hands-on work involving realistic browser automation and testing scenarios.
 - Opportunities to apply engineering judgment rather than performing repetitive manual QA alone.

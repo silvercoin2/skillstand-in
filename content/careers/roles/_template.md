@@ -1,10 +1,10 @@
 ---
 title: Role Title
-category: engineering # engineering | ai-training | healthcare | security | operations
+category: engineering # engineering | ai-training | healthcare | policy | security | operations
 headerCategory: Engineering
 type: Engineering
 location: Remote
-employment: Project-based / Flexible
+employment: Hourly / Part-time
 order: 100
 shortDescription: One or two sentences shown in the collapsed card.
 # Omit applyUrl to use the shared form in ../config.md

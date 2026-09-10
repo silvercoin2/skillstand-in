@@ -4,9 +4,9 @@ category: healthcare
 headerCategory: Healthcare & Science
 type: Public Health
 location: Remote
-employment: Project-based / Flexible
+employment: Hourly / Part-time
 order: 20
-shortDescription: Train and evaluate AI systems on healthcare policy, epidemiology, and population health using scientific evidence.
+shortDescription: Evaluate how AI understands population health, epidemiology, biostatistics, and health policy using graduate-level public health expertise.
 applyLabel: Apply as Health Policy AI Trainer
 helpfulHeading: Helpful Backgrounds
 helpfulIntro: Experience in any of these areas is useful but not required.
@@ -16,26 +16,30 @@ chips:
   - Epidemiology
   - Biostatistics
   - Population Health
+  - Health Equity
 ---
 
 ## About the Role
 
-Skill Stand In is looking for public health professionals to help train and evaluate AI systems focused on healthcare, epidemiology, and population health.
+Skill Stand In is looking for credentialed public health professionals to challenge, evaluate, and refine how AI understands population health, epidemiology, biostatistics, and health policy.
 
-You will use your expertise in public health and policy to improve how AI understands complex health challenges.
+This is a remote, flexible contract role. Your graduate-level knowledge is used to test AI reasoning and keep health-related outputs aligned with scientific evidence.
 
 ## What You'll Do
 
-- Create realistic public health scenarios for AI evaluation.
-- Review AI-generated health recommendations and policy analysis.
-- Evaluate epidemiological reasoning and statistical interpretation.
-- Develop expert-level answers based on scientific evidence.
-- Identify misinformation, bias, and gaps in health reasoning.
-- Provide structured feedback to improve AI performance.
+- Review advanced public health scenarios, including outbreak analysis, health equity assessments, and statistical interpretation of clinical or population data.
+- Evaluate whether AI-generated health advice and policy recommendations are factually accurate, ethically sound, and appropriately cautious.
+- Check epidemiological reasoning, including whether the work distinguishes correlation from causation and communicates risk clearly.
+- Compare AI conclusions with peer-reviewed research and guidance from authorities such as the CDC and WHO.
+- Flag misinformation, flawed logic, missing context, and bias that could affect diverse populations.
+- Provide structured expert feedback that improves the depth and scientific quality of AI outputs.
+- Work independently and asynchronously on your own schedule.
 
 ## What We're Looking For
 
-- Master's degree in Public Health, Health Policy, Epidemiology, or related fields.
-- Knowledge of epidemiology, biostatistics, or population health.
-- Ability to interpret scientific research and healthcare data.
+- Master's degree in Public Health, Health Policy, Epidemiology, or a closely related field.
+- Working knowledge of epidemiology, biostatistics, or population health.
+- Ability to interpret scientific research, healthcare data, and public-health guidance.
+- Experience assessing health policy, program design, or health equity questions is a plus.
 - Strong analytical and written communication skills.
+- Comfortable delivering independent, task-based evaluation work.

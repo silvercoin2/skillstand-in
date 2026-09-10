@@ -22,7 +22,7 @@ export function RoleDetail({ role, related }: { role: CareerRole; related: Caree
       <Section aria-labelledby="role-details-heading">
         <Container className="flex flex-col gap-12">
           <ul className="flex flex-wrap gap-2" aria-label="Role details">
-            {[role.type, role.location, role.employment, role.compensation].filter(Boolean).map((item) => (
+            {[role.type, role.location, role.employment].filter(Boolean).map((item) => (
               <li
                 key={item}
                 className="rounded-lg border border-border bg-surface px-3 py-1.5 text-xs font-semibold text-foreground/80"

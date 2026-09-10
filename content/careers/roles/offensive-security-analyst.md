@@ -4,15 +4,16 @@ category: security
 headerCategory: Security
 type: Security
 location: Remote
-employment: Project-based / Flexible
+employment: Hourly / Part-time
 order: 10
-shortDescription: Improve AI security capabilities through structured threat analysis, attack reasoning, and security scenario evaluation.
+shortDescription: Analyze realistic attack scenarios and evaluate AI security reasoning without writing or developing exploits.
 applyLabel: Apply as Offensive Security Analyst
 helpfulHeading: Helpful Backgrounds
 helpfulIntro: Experience in any of these areas is useful but not required.
 chips:
   - Threat Modeling
   - MITRE ATT&CK
+  - Kill Chains
   - Threat Intelligence
   - Cloud Security
   - Identity
@@ -21,22 +22,25 @@ chips:
 
 ## About the Role
 
-Skill Stand In is seeking cybersecurity professionals with strong adversarial thinking skills to help improve AI security capabilities.
+Skill Stand In is seeking Offensive Security Analysts who can bring real-world adversarial thinking to AI training and evaluation projects.
 
-This role focuses on structured threat analysis, attack reasoning, and security scenario evaluation rather than exploit development.
+This role is focused on structured adversarial reasoning, not exploit development. You will analyze realistic attack scenarios, model threat behavior, and help improve how AI systems understand security risk.
 
 ## What You'll Do
 
-- Analyze attack paths and adversary strategies.
-- Review cybersecurity scenarios for realism and accuracy.
-- Create structured threat models and intrusion narratives.
-- Evaluate defensive gaps and security weaknesses.
-- Apply frameworks such as MITRE ATT&CK.
-- Provide expert feedback for AI security training datasets.
+- Analyze attack paths, kill chains, and adversary strategies across realistic production environments.
+- Identify weaknesses, misconfigurations, and defensive gaps in complex system architectures.
+- Review red-team-style scenarios and intrusion narratives for accuracy, depth, and realism.
+- Evaluate and label adversarial reasoning data used to train and assess AI systems.
+- Explain how real attacks unfold — including impact, tradeoffs, and defender blind spots — in clear, structured writing.
+- Flag flawed security reasoning and score AI outputs against practitioner standards.
+- Work independently and asynchronously on task-based assignments.
 
 ## What We're Looking For
 
-- Experience in cybersecurity, penetration testing, threat intelligence, or security engineering.
-- Strong understanding of attacker behavior and security architecture.
-- Knowledge of cloud security, identity systems, and networks.
-- Ability to communicate complex security concepts clearly.
+- Professional experience in cybersecurity, penetration testing, threat intelligence, red teaming, or security engineering.
+- Strong understanding of attacker behavior, kill chains, and security architecture.
+- Knowledge of cloud security, identity systems, and modern networks.
+- Familiarity with frameworks such as MITRE ATT&CK is a plus.
+- Ability to communicate complex security concepts without providing exploit instructions or attack procedures.
+- Comfortable with independent, hourly contract work.

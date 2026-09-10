@@ -4,9 +4,9 @@ category: engineering
 headerCategory: Engineering
 type: Engineering
 location: Remote
-employment: Project-based / Flexible
+employment: Hourly / Part-time
 order: 40
-shortDescription: Design frontend architecture and ship high-quality, accessible interfaces for AI-powered products and digital platforms.
+shortDescription: Review AI-generated JavaScript frontend work for architecture, code quality, accessibility, and real-world maintainability.
 applyLabel: Apply as Senior Frontend Developer
 helpfulHeading: Helpful Technical Backgrounds
 helpfulIntro: "Examples include:"
@@ -24,23 +24,25 @@ chips:
 
 ## About the Role
 
-Skill Stand In is looking for Senior Frontend Engineers who can build modern, scalable web applications and intuitive user experiences.
+Skill Stand In is looking for Senior Frontend Developers who can apply real-world JavaScript expertise to train and evaluate next-generation AI systems.
 
-You will design frontend architecture, create reusable components, optimize performance, and deliver high-quality interfaces for AI-powered products and digital platforms.
+You will review AI-generated frontend solutions, judge whether they meet professional standards, and explain what a strong practitioner would accept or reject. No prior AI experience is required — your domain knowledge is what matters. You will not design or ship products.
 
 ## What You'll Do
 
-- Build sophisticated web applications using JavaScript, TypeScript, and modern frontend frameworks.
-- Design reusable component systems and frontend architectures.
-- Develop responsive, accessible, and high-performance user interfaces.
-- Collaborate with designers, product managers, and backend engineers.
-- Conduct code reviews and mentor other developers.
-- Improve frontend performance, reliability, and developer workflows.
+- Review AI-generated frontend code, components, and interface implementations written in JavaScript and related frameworks.
+- Judge architectural choices, state management, and whether the solution would be scalable and maintainable in practice.
+- Evaluate accessibility, responsiveness, and user-interface quality against professional frontend standards.
+- Identify incorrect APIs, weak performance patterns, brittle markup, and missing test coverage.
+- Provide constructive review comments that explain defects and what a correct implementation should look like.
+- Compare AI outputs with practitioner expectations and defend your scoring with clear technical reasoning.
+- Work independently and asynchronously on task-based evaluations.
 
 ## What We're Looking For
 
-- Extensive experience with JavaScript and frontend development.
-- Strong experience with React, Vue, Angular, or similar frameworks.
-- Experience with state management and frontend architecture.
-- Understanding of responsive design and accessibility principles.
-- Familiarity with automated testing and CI/CD pipelines.
+- Extensive professional experience with JavaScript and frontend development.
+- Strong experience with React, Vue, Angular, or a comparable modern framework.
+- Experience making or reviewing frontend architecture and state-management decisions.
+- Understanding of responsive design, accessibility, and browser performance.
+- Familiarity with automated testing, code review, and CI/CD workflows.
+- Ability to explain technical tradeoffs clearly in writing.

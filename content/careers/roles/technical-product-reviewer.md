@@ -1,17 +1,18 @@
 ---
-title: Technical Product Reviewer – AI Applications
+title: Product Reviewer – AI Web Application Specifications
 category: ai-training
 headerCategory: AI Training & Evaluation
 type: Product / AI Training
 location: Remote
-employment: Project-based / Flexible
+employment: Hourly / Part-time
 order: 20
-shortDescription: Review AI-generated product specifications and judge whether requirements are realistic, complete, and ready to implement.
-applyLabel: Apply as Technical Product Reviewer
+shortDescription: Review AI-generated web application specifications and judge whether product requests are realistic, consistent, and clear enough to evaluate.
+applyLabel: Apply as Product Reviewer
 helpfulHeading: Helpful Backgrounds
 helpfulIntro: Experience in any of these areas is useful but not required.
 chips:
   - Product Management
+  - Product Design
   - PRDs
   - User Stories
   - UX
@@ -21,22 +22,24 @@ chips:
 
 ## About the Role
 
-Skill Stand In is looking for experienced product and engineering professionals to review AI-generated product specifications and improve AI understanding of software development workflows.
+Skill Stand In is looking for experienced product managers, product designers, and technical product professionals to review AI-generated web application specifications before they are used in model evaluation.
 
-You will evaluate whether application requirements are realistic, complete, and ready for implementation.
+You will judge whether product requests are realistic, internally consistent, and clearly defined so AI-generated applications can be assessed against high-quality specifications.
 
 ## What You'll Do
 
-- Review AI-generated product requirements and technical specifications.
-- Evaluate user workflows, feature logic, and acceptance criteria.
-- Identify missing requirements, contradictions, and unclear behavior.
-- Validate product scenarios against real-world engineering practices.
-- Provide structured feedback to improve AI-generated software specifications.
-- Collaborate asynchronously on evaluation projects.
+- Review AI-generated product specifications for web applications.
+- Evaluate whether product requests are realistic, complete, and unambiguous.
+- Verify that later feature requests stay consistent with the existing product state.
+- Check that product requirements line up with associated browser-based test scenarios.
+- Identify inconsistencies, missing requirements, and unclear acceptance criteria.
+- Provide structured written feedback using the project's review guidelines.
+- Work independently and asynchronously to deliver high-quality evaluations.
 
 ## What We're Looking For
 
-- Experience in software engineering, product management, UX design, or technical analysis.
-- Understanding of modern web applications and software development workflows.
-- Experience reviewing requirements, PRDs, user stories, or acceptance criteria.
-- Strong analytical and written communication skills.
+- Experience in product management, product design, technical product, UX, or a closely related role.
+- Understanding of modern web applications and how product requirements turn into buildable, testable work.
+- Experience reviewing PRDs, user stories, acceptance criteria, or similar specification documents.
+- Ability to spot contradictions, missing constraints, and vague success criteria.
+- Strong written communication and attention to detail.

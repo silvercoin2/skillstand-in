@@ -4,9 +4,9 @@ category: engineering
 headerCategory: Engineering
 type: Engineering / AI
 location: Remote
-employment: Project-based / Flexible
+employment: Hourly / Part-time
 order: 20
-shortDescription: Design, build, and improve AI applications spanning large language models, agents, evaluation systems, and intelligent workflows.
+shortDescription: Evaluate AI-generated work across large language models, agents, and intelligent workflows against professional engineering standards.
 applyLabel: Apply as Senior AI Engineer
 helpfulHeading: Helpful Technical Backgrounds
 helpfulIntro: "Examples include:"
@@ -25,23 +25,25 @@ chips:
 
 ## About the Role
 
-Skill Stand In is looking for experienced AI Engineers to help design, build, and improve next-generation AI applications. You will work on challenging projects involving large language models, AI agents, evaluation systems, and intelligent workflows.
+Skill Stand In is looking for experienced AI Engineers to evaluate AI-generated work involving large language models, agents, evaluation systems, and intelligent workflows.
 
-This role is ideal for engineers who enjoy solving complex technical problems at the intersection of software engineering and artificial intelligence.
+This role is for practitioners who can judge whether AI output meets professional standards. You will not design or build products.
 
 ## What You'll Do
 
-- Design and build AI-powered applications using modern LLM technologies, agent frameworks, and cloud infrastructure.
-- Develop reliable AI workflows including retrieval systems, tool integrations, evaluation pipelines, and automation frameworks.
-- Build backend services and APIs supporting AI products and intelligent applications.
-- Improve AI system quality through testing, evaluation, monitoring, and performance optimization.
-- Collaborate with engineers, researchers, and product teams to translate ideas into production-ready systems.
-- Analyze AI outputs and improve reliability, accuracy, and user experience.
+- Review AI-generated applications, prompts, agent workflows, and evaluation setups for technical correctness.
+- Judge whether retrieval, tool use, orchestration, and monitoring choices would work in a production setting.
+- Assess model outputs, traces, and scoresheets for accuracy, reliability, and failure modes.
+- Identify hallucinated APIs, unsafe tool use, weak evaluation metrics, and incomplete test coverage.
+- Provide structured feedback that explains defects and what a stronger engineering solution would require.
+- Band AI work against practitioner standards and defend your scoring in writing.
+- Work independently and asynchronously to deliver high-quality evaluations.
 
 ## What We're Looking For
 
 - Strong software engineering experience with Python, TypeScript, JavaScript, Java, or similar languages.
-- Experience building production applications using AI/ML technologies.
+- Hands-on experience with production AI/ML applications, used to judge quality and correctness.
 - Familiarity with LLMs, AI agents, prompt engineering, or machine learning workflows.
 - Experience with cloud platforms such as AWS, Azure, or GCP.
 - Strong understanding of software architecture, APIs, databases, and distributed systems.
+- Ability to explain technical tradeoffs clearly in writing.

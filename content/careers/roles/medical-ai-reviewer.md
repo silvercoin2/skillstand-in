@@ -4,7 +4,7 @@ category: healthcare
 headerCategory: Healthcare & Science
 type: Healthcare
 location: Remote
-employment: Project-based / Flexible
+employment: Hourly / Part-time
 order: 10
 shortDescription: Evaluate AI-generated medical content so healthcare AI stays accurate, evidence-based, and clinically meaningful.
 applyLabel: Apply as Medical AI Reviewer
@@ -27,11 +27,13 @@ Your expertise will help ensure AI-generated medical information is accurate, ev
 
 ## What You'll Do
 
-- Review AI-generated clinical content for accuracy and scientific validity.
-- Validate medical information against research papers, clinical guidelines, and evidence.
-- Identify unsupported claims, missing context, and incorrect reasoning.
-- Create structured feedback to improve healthcare AI systems.
-- Evaluate medical scenarios, patient cases, and healthcare workflows.
+- Review AI-generated clinical content, patient cases, and healthcare workflows for scientific validity.
+- Validate medical claims against research papers, clinical guidelines, and current evidence.
+- Identify unsupported claims, missing context, incorrect reasoning, and unsafe recommendations.
+- Assess whether AI outputs communicate uncertainty and limitations the way a clinician would.
+- Provide structured feedback that improves the clinical quality of healthcare AI systems.
+- Score work against practitioner standards and explain banding decisions.
+- Work independently and asynchronously to deliver high-quality evaluations.
 
 ## What We're Looking For
 
@@ -39,3 +41,4 @@ Your expertise will help ensure AI-generated medical information is accurate, ev
 - Ability to interpret medical literature and clinical evidence.
 - Strong scientific communication skills.
 - Experience with healthcare research or medical writing preferred.
+- Comfortable reviewing unfamiliar cases and documenting findings clearly.

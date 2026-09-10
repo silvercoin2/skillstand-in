@@ -60,7 +60,7 @@ const roleFrontmatterSchema = z.object({
   headerCategory: optionalText,
   type: z.string().min(1),
   location: z.string().min(1).default("Remote"),
-  employment: z.string().min(1).default("Project-based / Flexible"),
+  employment: z.string().min(1).default("Hourly / Part-time"),
   compensation: optionalText,
   order: z.number().int().default(100),
   shortDescription: optionalText,

@@ -4,7 +4,7 @@ category: operations
 headerCategory: Operations
 type: Operations
 location: Remote
-employment: Flexible
+employment: Hourly / Part-time
 order: 10
 shortDescription: Manage AI platform accounts, project availability, operational workflows, contributor coordination, payments, and day-to-day platform administration.
 applyUrl: https://docs.google.com/forms/d/e/1FAIpQLSdJAfaML06yp9pPVBdXiCDdsuE_F5ZSLMDdMBJONSjg6jplXQ/viewform

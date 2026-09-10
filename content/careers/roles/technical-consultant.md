@@ -4,9 +4,9 @@ category: engineering
 headerCategory: Technical
 type: Engineering / AI Training
 location: Remote
-employment: Project-based / Flexible
+employment: Hourly / Part-time
 order: 10
-shortDescription: Work across AI training platforms by completing technical qualification processes, participating in AI-assisted interviews, and executing coding, reasoning, evaluation, and other technical assignments.
+shortDescription: Work across AI training platforms by completing technical qualification processes, participating in AI-assisted interviews, and evaluating coding, reasoning, and other technical work.
 applyUrl: https://docs.google.com/forms/d/e/1FAIpQLSfPLpcFepevBxK4v7w3xlo7Ism3URgsOqOAHnv8Kz4ulsnzmA/viewform
 applyLabel: Apply as Technical Consultant
 helpfulHeading: Helpful Technical Backgrounds
@@ -34,17 +34,17 @@ As a Technical Consultant at Skill Stand In, you will apply your software engine
 
 Depending on the platform and project, you may complete technical assessments or AI-assisted interviews before becoming eligible for assignments. Those interviews and assessments are platform-required qualification steps for your own authorized work.
 
-Once qualified, you will work independently on assigned tasks while maintaining high standards for accuracy, reasoning, communication, and reliability.
+Once qualified, you will evaluate AI-generated technical work independently while maintaining high standards for accuracy, reasoning, communication, and reliability. You will not design or build products.
 
 ## What You'll Do
 
 - Register and maintain profiles on supported AI training platforms.
 - Complete platform-specific onboarding and qualification processes.
 - Participate in AI-assisted or other technical interviews where required, as part of your own qualification for the work.
-- Complete coding, debugging, evaluation, reasoning, and software-related tasks.
-- Review AI-generated code and technical responses for correctness and quality.
+- Review AI-generated code, debugging work, reasoning traces, and other technical assignments for correctness.
+- Score tasks, files, and scoresheets using project rubrics and explain discrepancies.
+- Flag incorrect implementations, weak reasoning, and answers that would not meet professional standards.
 - Follow platform-specific instructions, quality requirements, and deadlines.
-- Maintain consistent work quality across assigned projects.
 - Communicate task status, platform issues, and project requirements with the Skill Stand In team.
 
 ## What We're Looking For
