@@ -9,7 +9,7 @@ page:
   viewRoles: View Open Roles
   openRolesEyebrow: Open Roles
   openRolesTitle: Expert Roles Across AI Work
-  openRolesDescription: Browse roles by discipline. Engagements are remote, hourly, and part-time, with flexible availability as projects come online.
+  openRolesDescription: Choose United States or Outside of the U.S. to see matching remote, hourly, part-time roles.
 
 teaser:
   eyebrow: Join Skill Stand In

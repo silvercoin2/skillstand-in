@@ -60,6 +60,7 @@ const roleFrontmatterSchema = z.object({
   headerCategory: optionalText,
   type: z.string().min(1),
   location: z.string().min(1).default("Remote"),
+  region: z.enum(["united-states", "outside-us"]),
   employment: z.string().min(1).default("Hourly / Part-time"),
   compensation: optionalText,
   order: z.number().int().default(100),
@@ -88,9 +89,12 @@ const SECTION_ALIASES: Record<string, "about" | "youWillDo" | "lookingFor"> = {
   "about skillstandin": "about",
   "what you'll do": "youWillDo",
   "what you’ll do": "youWillDo",
+  responsibilities: "youWillDo",
+  "day-to-day responsibilities": "youWillDo",
   "what we're looking for": "lookingFor",
   "what we’re looking for": "lookingFor",
   requirements: "lookingFor",
+  qualifications: "lookingFor",
 };
 
 const SKIP_HEADINGS = new Set(["join skillstand in", "join skill stand in"]);
@@ -204,6 +208,7 @@ function loadRole(
       headerCategory: data.headerCategory ?? categoryLabel,
       type: data.type,
       location: data.location,
+      region: data.region,
       employment: data.employment,
       compensation: data.compensation,
       shortDescription: data.shortDescription ?? about[0],

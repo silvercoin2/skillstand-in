@@ -5,6 +5,7 @@ headerCategory: AI Training & Evaluation
 type: AI Training
 location: Remote
 employment: Hourly / Part-time
+region: outside-us
 order: 10
 shortDescription: Evaluate AI-generated responses, score outputs against expert standards, and give structured feedback that improves model accuracy.
 applyLabel: Apply as AI Data Trainer

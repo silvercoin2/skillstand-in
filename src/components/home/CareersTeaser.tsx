@@ -12,7 +12,7 @@ import { ctaLinks } from "@/data/navigation";
 
 export function CareersTeaser() {
   const careersTeaser = getCareersTeaser();
-  const roleGroups = getCareerRolesByCategory();
+  const roleGroups = getCareerRolesByCategory("outside-us");
   return (
     <Section aria-labelledby="careers-teaser-heading" className="border-y border-border/70 bg-surface">
       <Container>

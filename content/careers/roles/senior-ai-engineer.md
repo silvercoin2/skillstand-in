@@ -5,6 +5,7 @@ headerCategory: Engineering
 type: Engineering / AI
 location: Remote
 employment: Hourly / Part-time
+region: outside-us
 order: 20
 shortDescription: Evaluate AI-generated work across large language models, agents, and intelligent workflows against professional engineering standards.
 applyLabel: Apply as Senior AI Engineer

@@ -5,6 +5,7 @@ headerCategory: Engineering
 type: QA / Test Engineering
 location: Remote
 employment: Hourly / Part-time
+region: outside-us
 order: 50
 shortDescription: Evaluate AI-generated tests and web application behavior, then explain failures, discrepancies, and scoring decisions.
 applyLabel: Apply as Test Engineer

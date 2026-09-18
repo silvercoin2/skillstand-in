@@ -5,6 +5,7 @@ headerCategory: Engineering
 type: Browser Test Validation
 location: Remote
 employment: Hourly / Part-time
+region: outside-us
 order: 60
 shortDescription: Review browser-based test workflows for AI-generated applications and decide whether automated tests are reliable, deterministic, and technically sound.
 applyLabel: Apply as QA Engineer

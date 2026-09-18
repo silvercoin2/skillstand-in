@@ -5,6 +5,7 @@ headerCategory: Engineering
 type: Engineering
 location: Remote
 employment: Hourly / Part-time
+region: outside-us # united-states | outside-us
 order: 100
 shortDescription: One or two sentences shown in the collapsed card.
 # Omit applyUrl to use the shared form in ../config.md

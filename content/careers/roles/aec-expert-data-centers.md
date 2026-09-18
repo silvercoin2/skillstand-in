@@ -5,6 +5,7 @@ headerCategory: Engineering
 type: Architecture / Engineering / Construction
 location: Remote
 employment: Hourly / Part-time
+region: outside-us
 order: 70
 shortDescription: Peer-review data-center design, permitting, and construction tasks so AI evaluation materials match professional AEC practice.
 applyLabel: Apply as AEC Expert

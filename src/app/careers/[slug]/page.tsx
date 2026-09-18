@@ -36,7 +36,7 @@ export default async function CareerRolePage({ params }: { params: CareerRolePar
   if (!role) notFound();
 
   const related = getCareerRoles()
-    .filter((item) => item.category === role.category && item.slug !== role.slug)
+    .filter((item) => item.category === role.category && item.region === role.region && item.slug !== role.slug)
     .slice(0, 4);
 
   return <RoleDetail role={role} related={related} />;

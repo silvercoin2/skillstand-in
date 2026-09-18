@@ -5,6 +5,7 @@ headerCategory: Security
 type: Security
 location: Remote
 employment: Hourly / Part-time
+region: outside-us
 order: 10
 shortDescription: Analyze realistic attack scenarios and evaluate AI security reasoning without writing or developing exploits.
 applyLabel: Apply as Offensive Security Analyst

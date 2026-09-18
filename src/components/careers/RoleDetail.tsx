@@ -5,9 +5,9 @@ import { RoleApplyButton } from "@/components/careers/RoleApplyButton";
 import { ArrowLink } from "@/components/ui/arrow-link";
 import { Container, Section } from "@/components/ui/container";
 import { PageHero } from "@/components/ui/page-hero";
+import { getCareerListingPath } from "@/data/career-regions";
 import type { CareerRole } from "@/data/career-types";
 import { getCareerRolePath } from "@/data/careers";
-import { ctaLinks } from "@/data/navigation";
 
 export function RoleDetail({ role, related }: { role: CareerRole; related: CareerRole[] }) {
   return (
@@ -15,7 +15,7 @@ export function RoleDetail({ role, related }: { role: CareerRole; related: Caree
       <PageHero eyebrow={role.headerCategory} title={role.title} description={role.shortDescription}>
         <div className="flex flex-col gap-4 sm:flex-row sm:items-center">
           <RoleApplyButton role={role} showHint={false} />
-          <ArrowLink href={ctaLinks.careers}>All open roles</ArrowLink>
+          <ArrowLink href={getCareerListingPath(role.region)}>All open roles</ArrowLink>
         </div>
       </PageHero>
 

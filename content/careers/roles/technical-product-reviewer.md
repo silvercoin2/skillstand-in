@@ -5,6 +5,7 @@ headerCategory: AI Training & Evaluation
 type: Product / AI Training
 location: Remote
 employment: Hourly / Part-time
+region: outside-us
 order: 20
 shortDescription: Review AI-generated web application specifications and judge whether product requests are realistic, consistent, and clear enough to evaluate.
 applyLabel: Apply as Product Reviewer

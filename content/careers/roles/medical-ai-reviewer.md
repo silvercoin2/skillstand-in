@@ -5,6 +5,7 @@ headerCategory: Healthcare & Science
 type: Healthcare
 location: Remote
 employment: Hourly / Part-time
+region: outside-us
 order: 10
 shortDescription: Evaluate AI-generated medical content so healthcare AI stays accurate, evidence-based, and clinically meaningful.
 applyLabel: Apply as Medical AI Reviewer

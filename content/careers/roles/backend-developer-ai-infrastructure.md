@@ -5,6 +5,7 @@ headerCategory: Engineering
 type: Engineering
 location: Remote
 employment: Hourly / Part-time
+region: outside-us
 order: 30
 shortDescription: Review AI-generated APIs, services, and data pipelines that support training, inference, and evaluation workloads.
 applyLabel: Apply as Backend Developer

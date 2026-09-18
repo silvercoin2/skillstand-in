@@ -5,6 +5,7 @@ headerCategory: Policy & Economics
 type: STEM
 location: Remote
 employment: Hourly / Part-time
+region: outside-us
 order: 10
 shortDescription: Evaluate AI-generated analysis of regulation, welfare, and public programs using applied economics and public policy expertise.
 applyLabel: Apply as Public Policy Economist

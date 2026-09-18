@@ -5,6 +5,7 @@ headerCategory: Healthcare & Science
 type: Public Health
 location: Remote
 employment: Hourly / Part-time
+region: outside-us
 order: 20
 shortDescription: Evaluate how AI understands population health, epidemiology, biostatistics, and health policy using graduate-level public health expertise.
 applyLabel: Apply as Health Policy AI Trainer

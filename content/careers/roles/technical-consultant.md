@@ -5,6 +5,7 @@ headerCategory: Technical
 type: Engineering / AI Training
 location: Remote
 employment: Hourly / Part-time
+region: outside-us
 order: 10
 shortDescription: Work across AI training platforms by completing technical qualification processes, participating in AI-assisted interviews, and evaluating coding, reasoning, and other technical work.
 applyUrl: https://docs.google.com/forms/d/e/1FAIpQLSfPLpcFepevBxK4v7w3xlo7Ism3URgsOqOAHnv8Kz4ulsnzmA/viewform

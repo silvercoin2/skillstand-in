@@ -5,6 +5,7 @@ headerCategory: Engineering
 type: Engineering
 location: Remote
 employment: Hourly / Part-time
+region: outside-us
 order: 40
 shortDescription: Review AI-generated JavaScript frontend work for architecture, code quality, accessibility, and real-world maintainability.
 applyLabel: Apply as Senior Frontend Developer

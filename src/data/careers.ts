@@ -1,5 +1,6 @@
 import "server-only";
 
+import type { CareerRegion } from "@/data/career-regions";
 import { loadCareers } from "@/lib/careers";
 
 export type {
@@ -8,6 +9,7 @@ export type {
   CareersPageCopy,
   CareersTeaserCopy,
 } from "@/data/career-types";
+export type { CareerRegion } from "@/data/career-regions";
 
 export function getCareersPage() {
   return loadCareers().page;
@@ -29,12 +31,13 @@ export function getCareerRolePath(slug: string) {
   return `/careers/${slug}`;
 }
 
-export function getCareerRolesByCategory() {
+export function getCareerRolesByCategory(region?: CareerRegion) {
   const { categories, roles } = loadCareers();
+  const visible = region ? roles.filter((role) => role.region === region) : roles;
   return categories
     .map((category) => ({
       ...category,
-      roles: roles.filter((role) => role.category === category.id),
+      roles: visible.filter((role) => role.category === category.id),
     }))
     .filter((group) => group.roles.length > 0);
 }

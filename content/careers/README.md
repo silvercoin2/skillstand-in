@@ -9,6 +9,7 @@ Job descriptions live here as Markdown. The careers page and homepage teaser loa
 3. Fill in the frontmatter and the three body sections.
 4. Leave `applyUrl` off to use `defaultApplyUrl` from `config.md`.
 5. Quote YAML values that contain a colon, e.g. `helpfulIntro: "Examples include:"`.
+6. Set `region` to `united-states` or `outside-us`. The careers page filter uses this field.
 
 ## Remove a role
 
@@ -21,6 +22,6 @@ Set `draft: true` in frontmatter.
 ## Apply links
 
 - **Default form** (most roles): `defaultApplyUrl` in `config.md`.
-- **Role-specific form** (Technical Consultant, Account Manager): set `applyUrl` on that role’s file.
+- **Role-specific form** (Technical Consultant, Account Manager, U.S. QA Engineer, U.S. Software Engineer): set `applyUrl` on that role’s file.
 
 Do not put Google Form URLs in `.env`.

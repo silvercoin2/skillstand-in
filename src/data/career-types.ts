@@ -1,3 +1,5 @@
+import type { CareerRegion } from "@/data/career-regions";
+
 export interface CareerCategory {
   id: string;
   label: string;
@@ -12,6 +14,8 @@ export interface CareerRole {
   headerCategory: string;
   type: string;
   location: string;
+  /** Who the listing is for: United States vs outside the U.S. */
+  region: CareerRegion;
   employment: string;
   compensation?: string;
   shortDescription: string;
