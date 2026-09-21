@@ -99,16 +99,6 @@ After successful onboarding and once you begin your ongoing Account Manager resp
 
 Platform revenue and task availability may vary from week to week.
 
-## Guaranteed Weekly Minimum
-
-While you remain actively engaged and fulfill the responsibilities and availability requirements of the role, Skill Stand In guarantees minimum compensation of $200 per week.
-
-You will therefore receive the greater of $200 per week, or 30% of the applicable income for that week.
-
-For example, if your 30% share is $120, you will receive $200. If your 30% share is $350, you will receive $350.
-
-Payments are normally processed weekly on Wednesday for the applicable completed payment period.
-
 ## What We Provide
 
 Skill Stand In provides the onboarding instructions, operational guidance, ongoing team support, and a dedicated work laptop after successful onboarding.

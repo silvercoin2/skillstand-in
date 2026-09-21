@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { MailIcon } from "lucide-react";
 
+import { Button } from "@/components/ui/button";
 import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
 import { footerNav } from "@/data/navigation";
@@ -15,11 +16,6 @@ function LinkedinIcon({ className }: { className?: string }) {
   );
 }
 
-const socialLinks = [
-  { label: "LinkedIn", href: siteConfig.socials.linkedin, Icon: LinkedinIcon },
-  { label: "Email", href: `mailto:${siteConfig.contactEmail}`, Icon: MailIcon },
-];
-
 export function Footer() {
   return (
     <footer className="border-t bg-surface">
@@ -30,21 +26,25 @@ export function Footer() {
             <p className="max-w-xs text-sm leading-relaxed text-muted-foreground">
               Engineering expertise for the AI training ecosystem.
             </p>
-            <ul className="flex items-center gap-1.5">
-              {socialLinks.map(({ label, href, Icon }) => (
-                <li key={label}>
-                  <a
-                    href={href}
-                    target={href.startsWith("mailto:") ? undefined : "_blank"}
-                    rel={href.startsWith("mailto:") ? undefined : "noopener noreferrer"}
-                    aria-label={label}
-                    className="flex size-11 items-center justify-center rounded-xl border border-border bg-background text-muted-foreground transition-colors hover:border-brand/60 hover:text-foreground"
-                  >
-                    <Icon className="size-[18px]" />
-                  </a>
-                </li>
-              ))}
-            </ul>
+            <div className="flex flex-col items-start gap-3">
+              <Button asChild size="lg">
+                <a
+                  href={siteConfig.socials.linkedin}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <LinkedinIcon data-icon="inline-start" className="size-[18px]" />
+                  Follow Us On LinkedIn
+                </a>
+              </Button>
+              <a
+                href={`mailto:${siteConfig.contactEmail}`}
+                aria-label="Email"
+                className="flex size-11 items-center justify-center rounded-xl border border-border bg-background text-muted-foreground transition-colors hover:border-brand/60 hover:text-foreground"
+              >
+                <MailIcon className="size-[18px]" />
+              </a>
+            </div>
           </div>
 
           {footerNav.map((group) => (

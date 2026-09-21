@@ -84,11 +84,14 @@ interface CareersData {
 
 const SECTION_ALIASES: Record<string, "about" | "youWillDo" | "lookingFor"> = {
   "about the role": "about",
+  "about the opportunity": "about",
   "about skillstand in": "about",
   "about skill stand in": "about",
   "about skillstandin": "about",
   "what you'll do": "youWillDo",
   "what you’ll do": "youWillDo",
+  "what you'll need to discuss": "youWillDo",
+  "what you’ll need to discuss": "youWillDo",
   responsibilities: "youWillDo",
   "day-to-day responsibilities": "youWillDo",
   "what we're looking for": "lookingFor",

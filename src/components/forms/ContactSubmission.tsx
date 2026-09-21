@@ -72,7 +72,7 @@ function ContactDirectInfo() {
         <Button asChild size="xl" variant="outline">
           <a href={siteConfig.socials.linkedin} target="_blank" rel="noopener noreferrer">
             <LinkedinIcon className="size-[18px]" />
-            LinkedIn
+            Follow Us On LinkedIn
           </a>
         </Button>
       </div>
