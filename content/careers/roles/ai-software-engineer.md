@@ -4,11 +4,11 @@ category: engineering
 headerCategory: Engineering
 type: Technical Representation
 location: United States — Remote
-employment: Onsite interview required
+employment: "1099 contractor"
 compensation: "$5k–$8k/month"
 region: united-states
 order: 40
-shortDescription: Represent a candidate in the final onsite interview for a founding AI Software Engineer role at an early-stage AI startup. Compensation is $5k–$8k/month based on qualifications.
+shortDescription: 1099 contractor role representing a candidate in a final onsite interview for a founding AI Software Engineer position. This is not a full-time job. Compensation is $5k–$8k/month based on qualifications.
 applyUrl: https://docs.google.com/forms/d/e/1FAIpQLSf9lINRfi9Ow3l7zzIj0l7G9q9A0KDmFUmCqeSrsd9hpwMz0Q/viewform
 applyLabel: Apply as AI Software Engineer
 helpfulHeading: Helpful Backgrounds
@@ -27,6 +27,8 @@ chips:
 ## About the Opportunity
 
 Skill Stand In is looking for an experienced AI Software Engineer to support a candidate through the final stage of an interview process for a Founding Engineer / AI Software Engineer position.
+
+This is a 1099 independent contractor engagement, not a full-time employee role.
 
 The original position is with an early-stage AI startup building a platform at the intersection of AI, real-time data, analytics, and prediction-market intelligence.
 
@@ -81,6 +83,7 @@ Because the target position is the company's first engineering hire, candidates 
 - Ability to explain technical decisions clearly and confidently
 - Strong system-design and problem-solving skills
 - Comfortable participating in an onsite technical interview
+- Available as a 1099 independent contractor; this is not a full-time position
 
 ## Nice to Have
 
@@ -102,7 +105,7 @@ The remaining step is an onsite interview, so we are specifically looking for a 
 
 ## Compensation
 
-Compensation is $5k–$8k/month based on qualifications.
+This is a 1099 contractor role, not a full-time position. Compensation is $5k–$8k/month based on qualifications.
 
 ## About Skill Stand In
 
