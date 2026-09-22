@@ -105,7 +105,7 @@ The remaining step is an onsite interview, so we are specifically looking for a 
 
 ## Compensation
 
-This is a 1099 contractor role, not a full-time position. Compensation is $5k–$8k/month based on qualifications.
+This is a 1099 contractor role, not a full-time position. Compensation is $5k–$5.5k/month based on qualifications.
 
 ## About Skill Stand In
 
