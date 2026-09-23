@@ -93,10 +93,6 @@ You will receive a one-time $200 onboarding payment after successfully completin
 
 This payment is separate from your ongoing weekly compensation.
 
-## Ongoing Compensation
-
-After successful onboarding and once you begin your ongoing Account Manager responsibilities, you will receive 30% of the applicable income generated through the accounts, work, or sub-team assigned to and managed by you.
-
 Platform revenue and task availability may vary from week to week.
 
 ## What We Provide
