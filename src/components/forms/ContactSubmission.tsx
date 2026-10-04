@@ -21,6 +21,14 @@ function LinkedinIcon({ className }: { className?: string }) {
   );
 }
 
+function SlackIcon({ className }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true" className={className} fill="currentColor">
+      <path d="M5.04 15.16a2.04 2.04 0 1 1-2.04-2.04h2.04v2.04zm1.02 0a2.04 2.04 0 1 1 4.08 0v5.12a2.04 2.04 0 1 1-4.08 0v-5.12zM8.84 5.04a2.04 2.04 0 1 1 2.04-2.04v2.04H8.84zm0 1.02a2.04 2.04 0 1 1 0 4.08H3.72a2.04 2.04 0 1 1 0-4.08h5.12zM18.96 8.84a2.04 2.04 0 1 1 2.04 2.04h-2.04V8.84zm-1.02 0a2.04 2.04 0 1 1-4.08 0V3.72a2.04 2.04 0 1 1 4.08 0v5.12zM15.16 18.96a2.04 2.04 0 1 1-2.04 2.04v-2.04h2.04zm0-1.02a2.04 2.04 0 1 1 0-4.08h5.12a2.04 2.04 0 1 1 0 4.08h-5.12z" />
+    </svg>
+  );
+}
+
 function ContactDirectInfo() {
   return (
     <div className="rounded-3xl border border-border bg-card p-6 shadow-soft sm:p-8 lg:p-10">
@@ -28,45 +36,21 @@ function ContactDirectInfo() {
         Get in touch
       </h2>
       <p className="mt-3 max-w-xl leading-relaxed text-muted-foreground">
-        Email us about a project or to join the network. We read every message and reply when we
-        can help.
+        Email us about a project, join the Slack workspace, or follow us on LinkedIn. We read every
+        message and reply when we can help.
       </p>
-      <dl className="mt-8 grid gap-5">
-        <div className="flex flex-col gap-1.5">
-          <dt className="text-xs font-semibold tracking-[0.16em] text-muted-foreground uppercase">
-            Email
-          </dt>
-          <dd>
-            <a
-              href={`mailto:${siteConfig.contactEmail}`}
-              className="text-lg font-semibold text-brand-deep underline underline-offset-4"
-            >
-              {siteConfig.contactEmail}
-            </a>
-          </dd>
-        </div>
-        <div className="flex flex-col gap-1.5">
-          <dt className="text-xs font-semibold tracking-[0.16em] text-muted-foreground uppercase">
-            LinkedIn
-          </dt>
-          <dd>
-            <a
-              href={siteConfig.socials.linkedin}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="font-medium text-foreground/90 underline underline-offset-4 hover:text-brand-deep"
-            >
-              Skill Stand In
-            </a>
-          </dd>
-        </div>
-      </dl>
-      <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+      <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
         <Button asChild size="xl">
           <a href={`mailto:${siteConfig.contactEmail}`}>
             <MailIcon data-icon="inline-start" />
             Email us
             <ButtonArrow />
+          </a>
+        </Button>
+        <Button asChild size="xl" variant="outline">
+          <a href={siteConfig.socials.slack} target="_blank" rel="noopener noreferrer">
+            <SlackIcon className="size-[18px]" />
+            Join our Community
           </a>
         </Button>
         <Button asChild size="xl" variant="outline">

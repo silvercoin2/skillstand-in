@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { MailIcon } from "lucide-react";
 
-import { Button } from "@/components/ui/button";
 import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
 import { footerNav } from "@/data/navigation";
@@ -16,6 +15,17 @@ function LinkedinIcon({ className }: { className?: string }) {
   );
 }
 
+function SlackIcon({ className }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true" className={className} fill="currentColor">
+      <path d="M5.04 15.16a2.04 2.04 0 1 1-2.04-2.04h2.04v2.04zm1.02 0a2.04 2.04 0 1 1 4.08 0v5.12a2.04 2.04 0 1 1-4.08 0v-5.12zM8.84 5.04a2.04 2.04 0 1 1 2.04-2.04v2.04H8.84zm0 1.02a2.04 2.04 0 1 1 0 4.08H3.72a2.04 2.04 0 1 1 0-4.08h5.12zM18.96 8.84a2.04 2.04 0 1 1 2.04 2.04h-2.04V8.84zm-1.02 0a2.04 2.04 0 1 1-4.08 0V3.72a2.04 2.04 0 1 1 4.08 0v5.12zM15.16 18.96a2.04 2.04 0 1 1-2.04 2.04v-2.04h2.04zm0-1.02a2.04 2.04 0 1 1 0-4.08h5.12a2.04 2.04 0 1 1 0 4.08h-5.12z" />
+    </svg>
+  );
+}
+
+const socialIconClassName =
+  "flex size-11 items-center justify-center rounded-xl border border-border bg-background text-muted-foreground transition-colors hover:border-brand/60 hover:text-foreground";
+
 export function Footer() {
   return (
     <footer className="border-t bg-surface">
@@ -26,23 +36,31 @@ export function Footer() {
             <p className="max-w-xs text-sm leading-relaxed text-muted-foreground">
               Engineering expertise for the AI training ecosystem.
             </p>
-            <div className="flex flex-col items-start gap-3">
-              <Button asChild size="lg">
-                <a
-                  href={siteConfig.socials.linkedin}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <LinkedinIcon data-icon="inline-start" className="size-[18px]" />
-                  Follow Us On LinkedIn
-                </a>
-              </Button>
+            <div className="flex items-center gap-3">
               <a
                 href={`mailto:${siteConfig.contactEmail}`}
                 aria-label="Email"
-                className="flex size-11 items-center justify-center rounded-xl border border-border bg-background text-muted-foreground transition-colors hover:border-brand/60 hover:text-foreground"
+                className={socialIconClassName}
               >
                 <MailIcon className="size-[18px]" />
+              </a>
+              <a
+                href={siteConfig.socials.slack}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Join our Community"
+                className={socialIconClassName}
+              >
+                <SlackIcon className="size-[18px]" />
+              </a>
+              <a
+                href={siteConfig.socials.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Follow us on LinkedIn"
+                className={socialIconClassName}
+              >
+                <LinkedinIcon className="size-[18px]" />
               </a>
             </div>
           </div>

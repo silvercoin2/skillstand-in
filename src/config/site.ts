@@ -14,6 +14,7 @@ export const siteConfig = {
   contactEmail: process.env.NEXT_PUBLIC_CONTACT_EMAIL ?? "ceo@skillstand-in.com",
   socials: {
     linkedin: "https://www.linkedin.com/company/skillstandin-llc",
+    slack: "https://join.slack.com/t/skillstand-in/shared_invite/zt-4bt9wud9z-clnRV4iKRHtLWCIRhClGGg",
   },
   /** Short disclaimer, shown next to the marquee and ecosystem sections. */
   disclaimerShort:

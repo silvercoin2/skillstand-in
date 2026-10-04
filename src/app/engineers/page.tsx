@@ -8,9 +8,18 @@ import { PageHero } from "@/components/ui/page-hero";
 import { Reveal } from "@/components/ui/reveal";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { TrackedLink } from "@/components/ui/tracked-link";
+import { siteConfig } from "@/config/site";
 import { capabilities, engineers } from "@/data/content";
 import { ctaLinks } from "@/data/navigation";
 import { buildMetadata } from "@/lib/seo";
+
+function SlackIcon({ className }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true" className={className} fill="currentColor">
+      <path d="M5.04 15.16a2.04 2.04 0 1 1-2.04-2.04h2.04v2.04zm1.02 0a2.04 2.04 0 1 1 4.08 0v5.12a2.04 2.04 0 1 1-4.08 0v-5.12zM8.84 5.04a2.04 2.04 0 1 1 2.04-2.04v2.04H8.84zm0 1.02a2.04 2.04 0 1 1 0 4.08H3.72a2.04 2.04 0 1 1 0-4.08h5.12zM18.96 8.84a2.04 2.04 0 1 1 2.04 2.04h-2.04V8.84zm-1.02 0a2.04 2.04 0 1 1-4.08 0V3.72a2.04 2.04 0 1 1 4.08 0v5.12zM15.16 18.96a2.04 2.04 0 1 1-2.04 2.04v-2.04h2.04zm0-1.02a2.04 2.04 0 1 1 0-4.08h5.12a2.04 2.04 0 1 1 0 4.08h-5.12z" />
+    </svg>
+  );
+}
 
 export const metadata: Metadata = buildMetadata({
   title: "For Engineers",
@@ -23,16 +32,24 @@ export default function EngineersPage() {
   return (
     <>
       <PageHero eyebrow="For Engineers" title={engineers.heading} description={engineers.description}>
-        <Button asChild size="xl">
-          <TrackedLink
-            href={ctaLinks.joinNetwork}
-            event="engineer_cta_clicked"
-            eventProps={{ location: "engineers_hero" }}
-          >
-            {engineers.cta}
-            <ButtonArrow />
-          </TrackedLink>
-        </Button>
+        <div className="flex flex-col gap-3 sm:flex-row">
+          <Button asChild size="xl">
+            <TrackedLink
+              href={ctaLinks.joinNetwork}
+              event="engineer_cta_clicked"
+              eventProps={{ location: "engineers_hero" }}
+            >
+              {engineers.cta}
+              <ButtonArrow />
+            </TrackedLink>
+          </Button>
+          <Button asChild size="xl" variant="outline">
+            <a href={siteConfig.socials.slack} target="_blank" rel="noopener noreferrer">
+              <SlackIcon className="size-[18px]" />
+              Join our Community
+            </a>
+          </Button>
+        </div>
       </PageHero>
 
       <Section aria-labelledby="roles-heading">
@@ -144,7 +161,7 @@ export default function EngineersPage() {
               </Reveal>
             ))}
           </div>
-          <Reveal delay={200} className="mt-12 flex justify-center">
+          <Reveal delay={200} className="mt-12 flex flex-col items-center justify-center gap-3 sm:flex-row">
             <Button asChild size="xl">
               <TrackedLink
                 href={ctaLinks.joinNetwork}
@@ -154,6 +171,12 @@ export default function EngineersPage() {
                 {engineers.cta}
                 <ButtonArrow />
               </TrackedLink>
+            </Button>
+            <Button asChild size="xl" variant="outline">
+              <a href={siteConfig.socials.slack} target="_blank" rel="noopener noreferrer">
+                <SlackIcon className="size-[18px]" />
+                Join our Community
+              </a>
             </Button>
           </Reveal>
         </Container>
